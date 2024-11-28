@@ -28,7 +28,7 @@ class ImageCacheManagement {
         
         let imageUrlString = urlImage.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if imageUrlString.isValidURL == false {
+        if !imageUrlString.isValidURL {
             let img = UIImage(named: imageUrlString)
             completion(img, false)
         }
