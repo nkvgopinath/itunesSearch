@@ -20,28 +20,28 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8DCAEC4C-C7BA-4EFB-97F9-63D245654F0A - f7afbd4eafdcedaf"
+                  uuid = "8DCAEC4C-C7BA-4EFB-97F9-63D245654F0A - 9aca1ca3b9963c3b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "itunesapi.APIClient.setUrlCompo(itunesapi.APIRequest) -&gt; Foundation.URLComponents"
                   moduleName = "itunesapi.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunesSearch%202/itunesapi/Infrastructure/APIRequest.swift"
+                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunes/itunesapi/Infrastructure/APIRequest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
                   endingLineNumber = "115">
                </Location>
                <Location
-                  uuid = "8DCAEC4C-C7BA-4EFB-97F9-63D245654F0A - 1f18f986f69b52fe"
+                  uuid = "8DCAEC4C-C7BA-4EFB-97F9-63D245654F0A - 727d586be0d1836a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 ((key: Swift.String, value: Any)) -&gt; () in itunesapi.APIClient.setUrlCompo(itunesapi.APIRequest) -&gt; Foundation.URLComponents"
                   moduleName = "itunesapi.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunesSearch%202/itunesapi/Infrastructure/APIRequest.swift"
+                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunes/itunesapi/Infrastructure/APIRequest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
@@ -325,22 +325,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1798C261-16E5-4D00-8495-757977013989"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "itunesapi/Infrastructure/APIRequest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
-            landmarkName = "errorHandler(_:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D0C2B328-298E-44AB-B8B7-95C97A46D1E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -447,6 +431,228 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "checkRootDetection()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "515300B1-6005-4909-8AFF-25A8E45D5291"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchAllMedia(searchTerm:mediatypes:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "800046B8-F08A-4D32-AD42-7D4A5DE87226"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchAllMedia(searchTerm:mediatypes:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5804420-1898-4404-AD44-ADFDE396BCFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchAllMedia(searchTerm:mediatypes:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BFB15AF-FD02-4C1E-B9D1-8309E8D5DF5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchAllMedia(searchTerm:mediatypes:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22C4C1B1-8739-48D6-AEFF-0BB9BD222934"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getApi(searchKeyword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C98B2C61-2289-4103-8B11-BADFF38BC779"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getApi(searchKeyword:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C98B2C61-2289-4103-8B11-BADFF38BC779 - 2de631dae2d006c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;itunesapi.ItunesCategoryModel&gt;, Swift.Error&gt;) -&gt; () in itunesapi.iTunesViewModel.getApi(searchKeyword: Swift.String) -&gt; ()"
+                  moduleName = "itunesapi.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunes/itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51">
+               </Location>
+               <Location
+                  uuid = "C98B2C61-2289-4103-8B11-BADFF38BC779 - 2de631dae2d006c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;itunesapi.ItunesCategoryModel&gt;, Swift.Error&gt;) -&gt; () in itunesapi.iTunesViewModel.getApi(searchKeyword: Swift.String) -&gt; ()"
+                  moduleName = "itunesapi.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gopinath.vaiyapuri/Downloads/itunes/itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6179D27-9053-404C-B624-B7DBD7D7D6CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getApi(searchKeyword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18E447EB-4B58-4750-BDB8-181C97249C5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "getApi(searchKeyword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23593FEF-5D3A-4781-A027-0B5A682B2821"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Presentation/Scene/iTunes/iTunesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "getApi(searchKeyword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "852DA9FE-3B85-40EA-897D-4C62F6995C95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "searchiTunes(searchKeyword:media:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F67A10F-BEE1-4F54-8676-4B7B90187D20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "searchiTunes(searchKeyword:media:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A86B7437-15F5-4E9A-8EFD-A0A4E694C478"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "itunesapi/BusinessModule/Domain/UseCases/iTuneSearchUseCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchAllMedia(searchTerm:mediatypes:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

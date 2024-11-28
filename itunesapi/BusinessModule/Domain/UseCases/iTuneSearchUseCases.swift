@@ -26,38 +26,39 @@ final class iTuneSearchUseCaseRepository {
 extension iTuneSearchUseCaseRepository: iTuneSearchUseCaseProtocol {
     
     func fetchAllMedia(searchTerm: String,mediatypes:[MediaTypeModel], completion: @escaping (Result<[ItunesCategoryModel], any Error>) -> Void) {
-        let group = DispatchGroup()
-        var finalList:[ItunesCategoryModel] = []
-        var errorAppear:Error?
         
-        for mediaType in mediatypes {
-            group.enter()
-            searchiTunes(searchKeyword: searchTerm, media: mediaType.value) { response in
-                switch response{
-                case .success(let response):
-                    if let count =  response.resultCount, count > 0 {
-                        if let result = response.results {
-                            finalList.append(ItunesCategoryModel(title: mediaType.key, data: result))
+            
+            let group = DispatchGroup()
+            var finalList:[ItunesCategoryModel] = []
+            var errorAppear:Error?
+            
+            for mediaType in mediatypes {
+                group.enter()
+                searchiTunes(searchKeyword: searchTerm, media: mediaType.value) { response in
+                    switch response{
+                    case .success(let response):
+                        if let count =  response.resultCount, count > 0 {
+                            if let result = response.results {
+                                finalList.append(ItunesCategoryModel(title: mediaType.key, data: result))
+                            }
                         }
+                        group.leave()
+                        
+                    case .failure(let error):
+                        errorAppear = error
+                        group.leave()
                     }
-                    group.leave()
-                    
-                case .failure(let error):
-                    errorAppear = error
-                    group.leave()
                 }
             }
-        }
+            
+            group.notify(queue: .main) {
+                if let error = errorAppear {
+                    completion(.failure(error))
+                }else {
+                        completion(.success(finalList))
+                }
+            }
         
-        group.notify(queue: .main) {
-            if let error = errorAppear {
-                completion(.failure(error))
-            }else {
-                if finalList.count > 0 {
-                    completion(.success(finalList))
-                }
-            }
-        }
         
     }
     
