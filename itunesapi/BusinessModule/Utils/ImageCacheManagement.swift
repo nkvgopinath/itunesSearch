@@ -44,14 +44,14 @@ class ImageCacheManagement {
                 session.dataTask(with: request, completionHandler:{ (data, response, error) in
                     
                     if let error = error {
-                                print("Error fetching image: \(error.localizedDescription)")
+                        print("Error fetching image: \(error.localizedDescription)")
                         completion(nil, false)
-                                return
+                        return
                      }
                     
                     guard let imgData = data, let imageToCache = UIImage(data: imgData) else {
                         completion(nil, false)
-                                   return
+                     return
                      }
                     self.imageCache.setObject(imageToCache, forKey: NSString(string: imageUrlString))
                     completion(imageToCache, false)
@@ -60,8 +60,6 @@ class ImageCacheManagement {
             }
         }
     }
-
-    
 }
 
 
