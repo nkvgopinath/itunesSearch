@@ -8,7 +8,7 @@
 import UIKit
 
 class iTunesSearchController: UIViewController {
-
+    
     @IBOutlet var backgroundView: UIView!
     
     @IBOutlet weak var searchTextfield: UITextField!
@@ -18,11 +18,11 @@ class iTunesSearchController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     var filterData:[MediaTypeModel] = []
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.basicConfig()
         self.registCollectionView()
         self.configureUiTest()
@@ -40,7 +40,7 @@ class iTunesSearchController: UIViewController {
         submitButton.accessibilityIdentifier = "submitButton"
         collectionView.accessibilityIdentifier = "collectionView"
     }
-
+    
     
     private func registCollectionView() {
         collectionView.delegate = self
@@ -56,7 +56,7 @@ class iTunesSearchController: UIViewController {
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         collectionView.addGestureRecognizer(gesture)
-
+        
         
     }
     
@@ -87,12 +87,12 @@ class iTunesSearchController: UIViewController {
         }
     }
     
-
+    
     @objc func handleTap() {
         self.moveToMedia()
-       }
+    }
     
-
+    
     private  func moveToMedia(){
         let vc = MediaTypeController()
         vc.selectedItem = filterData
@@ -118,7 +118,7 @@ extension iTunesSearchController : UICollectionViewDelegate, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.moveToMedia()
     }
-
+    
 }
 
 
@@ -136,7 +136,7 @@ extension iTunesSearchController : UICollectionViewDataSource{
         cell.setLayer(borderWidth: 0.5, color : UIColor.white)
         
         return cell
-
+        
     }
     
     
