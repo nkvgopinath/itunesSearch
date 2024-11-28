@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iTunesControllerView" customModule="itunesapi" customModuleProvider="target">
+            <connections>
+                <outlet property="navigation" destination="a4e-US-x0a" id="9ad-03-RjC"/>
+                <outlet property="segmentController" destination="HRp-Rh-q1c" id="wmD-YU-XbA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHolder" destination="xx2-OJ-hCK" id="1JV-rR-SBN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yfu-jC-3Q0">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-US-x0a" customClass="NavigationBarView" customModule="itunesapi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="5Va-yf-kXw"/>
+                            </constraints>
+                        </view>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HRp-Rh-q1c">
+                            <rect key="frame" x="0.0" y="46" width="393" height="46"/>
+                            <segments>
+                                <segment title="Grid Layout"/>
+                                <segment title="List Layout"/>
+                            </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="indexChanges:" destination="-1" eventType="valueChanged" id="ZAx-aL-2xZ"/>
+                            </connections>
+                        </segmentedControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx2-OJ-hCK">
+                            <rect key="frame" x="0.0" y="92" width="393" height="667"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="HRp-Rh-q1c" firstAttribute="height" secondItem="a4e-US-x0a" secondAttribute="height" id="hFd-qX-W2c"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yfu-jC-3Q0" secondAttribute="bottom" id="3tD-mZ-jNa"/>
+                <constraint firstItem="yfu-jC-3Q0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I37-Vi-3N9"/>
+                <constraint firstItem="yfu-jC-3Q0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TBW-Z7-jhO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yfu-jC-3Q0" secondAttribute="trailing" id="cpu-bj-yJy"/>
+            </constraints>
+            <point key="canvasLocation" x="-59" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

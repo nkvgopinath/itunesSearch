@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewConroller" customModule="itunesapi" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationView" destination="Dha-Pw-RwP" id="hK2-vh-6PA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="9eM-IZ-fRc" id="RHj-Ky-E6F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-Pw-RwP" customClass="NavigationBarView" customModule="itunesapi" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1OQ-eG-6be"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-IZ-fRc">
+                    <rect key="frame" x="0.0" y="104" width="393" height="714"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Dha-Pw-RwP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kfw-Tc-9Sn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9eM-IZ-fRc" secondAttribute="bottom" id="aS5-Z0-Mp8"/>
+                <constraint firstItem="Dha-Pw-RwP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hbZ-SK-pkL"/>
+                <constraint firstItem="Dha-Pw-RwP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qTw-CW-Luv"/>
+                <constraint firstItem="9eM-IZ-fRc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ry3-7D-dxy"/>
+                <constraint firstItem="9eM-IZ-fRc" firstAttribute="top" secondItem="Dha-Pw-RwP" secondAttribute="bottom" id="shJ-mk-ZZt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9eM-IZ-fRc" secondAttribute="trailing" id="xcu-0b-QmO"/>
+            </constraints>
+            <point key="canvasLocation" x="-54.198473282442748" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
