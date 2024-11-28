@@ -9,6 +9,11 @@ import UIKit
 final class iTunesCoordinator: Coordinate {
     
     weak var viewController: iTunesControllerView?
+
+    init(viewController: iTunesControllerView) {
+         self.viewController = viewController
+       }
+
         
     func showScreen(_ screen: Screen) {
         switch screen {

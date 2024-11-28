@@ -19,12 +19,12 @@ class iTunesViewModel {
     private let filter: [MediaTypeModel]
     
      var selectedData:iTunesResult?
-    
-    init(repositoryProvider:iTuneSearchUseCaseRepository,coordinatorProvider:iTunesCoordinator, filterProvider:[MediaTypeModel]){
-        repository = repositoryProvider
-        coordinator = coordinatorProvider
-        iTunesSearchModel = []
-        filter = filterProvider
+
+    init(repositoryProvider: iTuneSearchUseCaseRepository, coordinatorProvider: iTunesCoordinator, filterProvider: [MediaTypeModel]) {
+        self.repository = repositoryProvider
+        self.coordinator = coordinatorProvider
+        self.iTunesSearchModel = []
+        self.filter = filterProvider        
     }
     
     
@@ -43,7 +43,6 @@ class iTunesViewModel {
     func getApi(searchKeyword: String){
         
         self.coordinator?.viewController?.showLoader()
-
         let tempFilter = filter.count == 0 ? AppUtils.typeList : filter
 
         repository?.fetchAllMedia(searchTerm: searchKeyword, mediatypes: tempFilter) { response in

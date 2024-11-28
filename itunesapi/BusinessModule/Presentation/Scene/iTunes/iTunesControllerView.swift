@@ -40,13 +40,12 @@ class iTunesControllerView: UIViewController  {
         navigation.backButton.accessibilityIdentifier = "Back"
 
     }
-    func showLoader(){
+    func showLoader() {
         DispatchQueue.main.async {
             self.showCustomLoader()
         }
     }
-    
-    func hideLoader(){
+    func hideLoader() {
         DispatchQueue.main.async {
             self.hideCustomLoader()
         }

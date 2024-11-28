@@ -75,12 +75,11 @@ class iTunesSearchController: UIViewController {
     @IBAction func searchAction(_ sender: Any) {
         if  let searchKeyword = searchTextfield.text, searchKeyword.count > 0 {
             let controller = iTunesControllerView()
-            let coordinator = iTunesCoordinator()
+            let coordinator = iTunesCoordinator(viewController: controller)
             let repository = iTuneSearchUseCaseRepository(APIClient())
             let viewModel = iTunesViewModel(repositoryProvider: repository, coordinatorProvider: coordinator, filterProvider: filterData)
             controller.viewModel = viewModel
             viewModel.getApi(searchKeyword: searchKeyword)
-            coordinator.viewController = controller
             self.navigationController?.pushViewController(controller, animated: true)
         }else {
             self.showAlert(message: "Please enter the search data" )
